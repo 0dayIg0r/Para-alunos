@@ -1,0 +1,260 @@
+/* Reset básico */
+
+/* Seleciona TODOS os elementos da página */
+* {
+    margin: 0; 
+    /* Remove margens padrão do navegador */
+
+    padding: 0; 
+    /* Remove espaçamentos internos padrão */
+
+    box-sizing: border-box;
+    /* Faz width e height incluírem padding e borda */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte principal da página */
+
+    background-color: #f5f5f5;
+    /* Define a cor de fundo da página */
+}
+
+/* Container que centraliza o conteúdo do site */
+.container {
+    max-width: 1200px;
+    /* Largura máxima do conteúdo */
+
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+
+    padding: 20px;
+    /* Espaçamento interno */
+
+    display: flex;
+    /* Ativa o Flexbox */
+
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+}
+
+h2 {
+    font-size: 1.1rem;
+    /* Tamanho do texto */
+
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
+
+    color: #444;
+    /* Cor do texto */
+}
+
+/* --- 1. Header Principal --- */
+.main-header {
+    background-color: #ee4d2d;
+    /* Cor de fundo do cabeçalho */
+
+    color: white;
+    /* Cor do texto */
+
+    padding: 15px 50px;
+    /* Espaçamento interno vertical e horizontal */
+
+    display: flex;
+    /* Ativa o Flexbox */
+
+    justify-content: space-between;
+    /* Distribui os itens com espaço entre eles */
+
+    align-items: center;
+    /* Alinha os itens verticalmente no centro */
+}
+
+.logo {
+    font-size: 1.5rem;
+    /* Tamanho do texto do logo */
+
+    font-weight: bold;
+    /* Deixa o texto em negrito */
+}
+
+.search-bar input {
+    width: 400px;
+    /* Largura do input */
+
+    padding: 10px;
+    /* Espaçamento interno */
+
+    border: none;
+    /* Remove a borda */
+
+    border-radius: 2px;
+    /* Arredonda levemente os cantos */
+}
+
+/* --- 2. Banner --- */
+.banner-section {
+    margin-bottom: 30px;
+    /* Espaço abaixo da seção */
+}
+
+.banner-placeholder {
+    background-color: #ccc;
+    /* Cor de fundo */
+
+    height: 160px;
+    /* Altura do banner */
+
+    display: flex;
+    /* Ativa o Flexbox */
+
+    justify-content: center;
+    /* Centraliza horizontalmente */
+
+    align-items: center;
+    /* Centraliza verticalmente */
+
+    color: #666;
+    /* Cor do texto */
+
+    font-weight: bold;
+    /* Texto em negrito */
+}
+
+/* --- 3. Seção de Categorias --- */
+.categories-section {
+    margin-bottom: 30px;
+    /* Espaço abaixo da seção */
+}
+
+.categories-flex-container {
+    display: flex;
+    /* Ativa o Flexbox */
+
+    flex-wrap: wrap;
+    /* Permite quebrar linha */
+
+    justify-content: space-between;
+    /* Distribui os itens com espaço entre eles */
+}
+
+.category-item {
+    display: flex;
+    /* Ativa o Flexbox */
+
+    flex-direction: column;
+    /* Organiza os itens em coluna */
+
+    align-items: center;
+    /* Centraliza horizontalmente */
+
+    text-align: center;
+    /* Centraliza o texto */
+
+    font-size: 0.85rem;
+    /* Tamanho do texto */
+
+    width: 9%;
+    /* Largura ocupada por cada item */
+}
+
+.circle-placeholder {
+    width: 80px;
+    /* Largura do círculo */
+
+    height: 80px;
+    /* Altura do círculo */
+
+    background-color: #bbb;
+    /* Cor de fundo */
+
+    border-radius: 50%;
+    /* Transforma em círculo */
+
+    margin-bottom: 8px;
+    /* Espaço abaixo do círculo */
+}
+
+/* --- 4. Seção de Produtos --- */
+.products-flex-container {
+    display: flex;
+    /* Ativa o Flexbox */
+
+    flex-wrap: wrap;
+    /* Permite quebrar linha */
+
+    justify-content: space-between;
+    /* Distribui os cards com espaço entre eles */
+}
+
+.product-card {
+    background-color: white;
+    /* Cor de fundo do card */
+
+    border: 1px solid #ddd;
+    /* Borda fina cinza */
+
+    width: 15%;
+    /* Largura do card */
+
+    display: flex;
+    /* Ativa o Flexbox */
+
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+}
+
+.product-image-placeholder {
+    background-color: #e0e0e0;
+    /* Cor de fundo da área da imagem */
+
+    height: 160px;
+    /* Altura da área da imagem */
+}
+
+.product-image-placeholder img {
+    width: 100%;
+    /* Faz a imagem ocupar toda largura */
+
+    height: 100%;
+    /* Faz a imagem ocupar toda altura */
+
+    object-fit: cover;
+    /* Faz a imagem preencher sem deformar */
+
+    object-position: top;
+    /* Prioriza a parte superior da imagem */
+}
+
+.product-info {
+    padding: 10px;
+    /* Espaçamento interno */
+
+    display: flex;
+    /* Ativa o Flexbox */
+
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+
+    gap: 5px;
+    /* Espaçamento entre os elementos */
+}
+
+.price {
+    color: #ee4d2d;
+    /* Cor do preço */
+
+    font-weight: bold;
+    /* Texto em negrito */
+
+    font-size: 1.1rem;
+    /* Tamanho do texto */
+}
+
+.product-name {
+    font-size: 0.9rem;
+    /* Tamanho do nome do produto */
+
+    color: #333;
+    /* Cor do texto */
+}
