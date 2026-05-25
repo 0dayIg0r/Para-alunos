@@ -1,30 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=p, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Currículo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Alterando texto</h1>
-    <p id="texto">Olá</p>
 
-    <button onclick="mudarTexto()">Mudar texto</button>
+  <div class="conteiner">
+    <!-- Seção do Formulário -->
+    <section id="secao-formulario">
+      <h2>Preencha seus Dados</h2>
+      <form id="formulario-curriculo">
+        <div class="grupo-campo">
+          <label for="entradaNome">Nome Completo</label>
+          <input type="text" id="entradaNome" placeholder="Ex: Igor Silva" required>
+        </div>
 
-    <div>
-        <h1>Pegando valor do input</h1>
-        <input type="text" id="nome" placeholder="Digite seu nome">
+        <div class="grupo-campo">
+          <label for="entradaContato">Contato</label>
+          <input type="text" id="entradaContato" placeholder="Ex: igor@email.com | (11) 99999-9999 | São Paulo - SP" required>
+        </div>
 
-        <button onclick="mostrarNome()">mostrar nome</button>
+        <div class="grupo-campo">
+          <label for="entradaResumo">Resumo Profissional</label>
+          <textarea id="entradaResumo" placeholder="Breve resumo sobre sua carreira e objetivos..." required></textarea>
+        </div>
 
-        <p id="resultado"></p>
+        <div class="grupo-campo">
+          <label for="entradaExperiencia">Experiência Profissional</label>
+          <textarea id="entradaExperiencia" placeholder="Empresa - Cargo (Ano - Ano)&#10;• Detalhes das suas responsabilidades..." required></textarea>
+        </div>
 
-    </div>
+        <div class="grupo-campo">
+          <label for="entradaFormacao">Formação Acadêmica</label>
+          <textarea id="entradaFormacao" placeholder="Instituição - Curso (Ano de Conclusão)" required></textarea>
+        </div>
+
+        <button type="button" id="botaoGerar">Gerar Currículo</button>
+      </form>
+    </section>
+
+    <!-- Seção do Currículo Estilizado (Escondida por padrão) -->
+    <section id="secao-curriculo" class="escondido">
+      <div class="cartao-curriculo">
+        <div class="cabecalho-curriculo">
+          <h1 id="curriculoNome"></h1>
+          <p id="curriculoContato"></p>
+        </div>
+
+        <div class="corpo-curriculo">
+          <div class="bloco-curriculo">
+            <h3>Sobre Mim</h3>
+            <p id="curriculoResumo"></p>
+          </div>
+
+          <div class="bloco-curriculo">
+            <h3>Experiência Profissional</h3>
+            <p id="curriculoExperiencia"></p>
+          </div>
+
+          <div class="bloco-curriculo">
+            <h3>Formação Acadêmica</h3>
+            <p id="curriculoFormacao"></p>
+          </div>
+        </div>
+      </div>
+      
+      <button type="button" id="botaoVoltar" class="botao-secundario">← Voltar e Editar</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
-<script src="script.js"></script>
-
 </html>

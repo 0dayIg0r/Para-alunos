@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Curriculo</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="secao-formulario">
+            <h2>Preencha seus dados</h2>
+
+            <form id="forumlario-curriculo">
+                <div class="grupo-campo">
+                    <label for="entradaNome">Nome Completo</label>
+                    <input type="text" id="entradaNome" placeholder="Ex: Igor Silva" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="entradaContato">Contato</label>
+                    <input type="text" id="entradaContato" placeholder="Ex: email@email 61 999-9999 Brasília - DF"
+                        required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="entradaResumo">Resumo Profissional</label>
+                    <textarea id="entradaResumo" placeholder="Ex: Breve resumo sobre sua carreira"></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="entradaExperiencia">Experiência Profissional</label>
+                    <textarea id="entradaExperiencia" placeholder="Ex: Empresa - Cargo - Data inicio - Data fim"></textarea>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="entradaFormacao">Formação Acadêmica</label>
+                    <textarea id="entradaFormacao" placeholder="Ex: Instituição - Curso - (ano de conclusão)"></textarea>
+                </div>
+
+                <button type="button" id="botaoGerar">Gerar Currículo</button>
+            </form>
+        </section>
+
+        <section id="secao-curriculo" class="escondido">
+            <div class="cartao-curriculo">
+
+                <div class="cabecalho-curriculo">
+                    <h1 id="curriculoNome"></h1>
+                    <p id="curriculoContato"></p>
+                </div>
+
+                <div class="corpo-curriculo">
+
+                    <div class="bloco-curriculo">
+                        <h3>Sobre Mim</h3>
+                        <p id="curriculoResumo"></p>
+                    </div>
+
+                    <div class="bloco-curriculo">
+                        <h3>Experiência Profissional</h3>
+                        <p id="curriculoExperiencia"></p>
+                    </div>
+
+                    <div class="bloco-curriculo">
+                        <h3>Formação Acadêmica</h3>
+                        <p id="curriculoFormacao"></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <button type="button" id="botaoVoltar" class="botao-secundario">◄ Voltar e Editar</button>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

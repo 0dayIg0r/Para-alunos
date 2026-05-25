@@ -1,0 +1,155 @@
+/* --- Estilos Globais --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .conteiner {
+    width: 100%;
+    max-width: 750px;
+  }
+  
+  /* Classe utilitária de exibição */
+  .escondido {
+    display: none !important;
+  }
+  
+  /* --- Estilização do Formulário --- */
+  #secao-formulario {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  h2 {
+    color: #1a1a1a;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+  
+  .grupo-campo {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 14px;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: border-color 0.2s;
+  }
+  
+  input[type="text"]:focus, textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  /* --- Botões --- */
+  button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+  }
+  
+  .botao-secundario {
+    background-color: #64748b;
+    margin-top: 20px;
+  }
+  
+  .botao-secundario:hover {
+    background-color: #475569;
+  }
+  
+  /* --- O Novo Design do Currículo Exibido --- */
+  .cartao-curriculo {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .cabecalho-curriculo {
+    background: #1e293b;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .cabecalho-curriculo h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+  
+  .cabecalho-curriculo p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 15px;
+  }
+  
+  .corpo-curriculo {
+    padding: 40px;
+  }
+  
+  .bloco-curriculo {
+    margin-bottom: 30px;
+  }
+  
+  .bloco-curriculo:last-child {
+    margin-bottom: 0;
+  }
+  
+  .bloco-curriculo h3 {
+    color: #3b82f6;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #eff6ff;
+    padding-bottom: 6px;
+  }
+  
+  .bloco-curriculo p {
+    margin: 0;
+    color: #334155;
+    font-size: 15px;
+    line-height: 1.6;
+    white-space: pre-line; /* Respeita as quebras de linha digitadas */
+  }
